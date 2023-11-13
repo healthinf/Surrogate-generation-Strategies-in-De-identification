@@ -86,7 +86,7 @@ def score(x, k):
   return math.exp(-(k*x))
 
 def score2(x,k):
-  return k - x
+  return 1 - x/math.sqrt(k)
 
 def pdf(x, epsilon):
   return math.exp(epsilon*x)
